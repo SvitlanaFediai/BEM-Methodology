@@ -1,0 +1,169 @@
+:root {
+  --font:'Lato', sans-serif;
+  --color-main: #3C3C3C;
+  --color-blue: #18B5DC;
+  --color-text: #282528;
+  --color-grey: #646464;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px var(--font);
+  color: var(--color-main);
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  border-bottom: 1px solid #BDBDBD;
+  position: relative;
+}
+
+.logo-header{
+  position: absolute;
+  left: 135px;
+  top: 10px;
+}
+
+.menu-list__item{
+  display: inline-block;
+  font-size: 20px;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  font: 20px;
+  color: var(--color-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu-list__link:hover {
+  color: var(--color-blue);
+}
+
+.btn {
+  position: absolute;
+  right: 135px;
+  top: 20px;
+  text-decoration: none;
+  color: var(--color-main);
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid var(--color-main);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-blue);
+  color: #fff;
+  border-color: var(--color-blue);
+}
+
+.team {
+  background-color: #F6F6F6;
+  padding: 150px 0;
+}
+
+.team__title {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.team__divider {
+  display: inline-block;
+  border: 1px solid #DDDBDB;
+  width: 45px;
+  margin-bottom: 40px;
+}
+
+.team__sub-title {
+  font-size: 16px;
+  max-width: 570px;
+  margin: 0 auto 60px;
+}
+
+.team__card-list-item {
+  display: inline-block;
+  position: relative;
+}
+
+.team__card-list-item:not(:last-child) {
+  padding-right: 25px;
+}
+
+.team__card-photo {
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.team__card-wrapper:hover .contact-list--card  {
+  opacity: 1;
+
+}
+
+.team__card-name {
+  color: var(--color-text);
+  font-weight: 700;
+  text-align: left;
+}
+
+.team__card-description {
+  color: var(--color-grey);
+  text-align: left;
+}
+
+.footer {
+  padding: 40px 0 40px;
+}
+
+.contact-list--card {
+  position: absolute;
+  height: 270px;
+  width: 270px;
+  opacity: 0;
+  top: 0;
+  transition: .5s ease;
+  background-color:  #5DCBE6;
+}
+
+.contact-list__item {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contact-list--card .contact-list__item {
+  margin-top: 40%;
+}
+
+.contact-list__item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.contact-list__link:hover .social{
+  display: none;
+}
+
+.social--hover{
+  display: none;
+}
+
+.contact-list__link:hover .social--hover{
+  display: block;
+}
